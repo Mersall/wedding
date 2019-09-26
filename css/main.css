@@ -1,0 +1,65 @@
+.navbar {
+  font-weight: bold;
+}
+.cover {
+  background-image: url(./dress.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+}
+
+/* grid css  */
+.wraper {
+    max-width: 1200px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    float: none;
+    display: grid;
+    grid-gap: 20px 10px;
+    grid-template-columns: 180px 180px 180px 380px;
+    grid-template-rows: 164px 150px;
+}
+
+.pic-1 {
+  grid-column: 1/2;
+  grid-row: 1/3;ء   
+}
+.pic-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.pic-3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.pic-4 {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.pic > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+ @media(max-width: 767px){
+    .wraper{
+        display: block;
+        width: 90%;
+        
+    }
+    .pic > img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        margin-bottom: 
+      }
+
+} 
+
